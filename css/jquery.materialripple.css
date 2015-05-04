@@ -1,0 +1,60 @@
+/* MATERIAL DESIGN RIPPLE */
+.ripple-wrapper {
+	display: block;
+	position: absolute;
+	background: rgba(255,255,255,0.4);
+	border-radius: 100%;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+}
+.ripple-wrapper.animated {
+	z-index: 9999;
+	animation: ripple 0.4s linear;
+	-webkit-animation: ripple 0.4s linear;
+	-moz-animation: ripple 0.4s linear;
+	-o-animation: ripple 0.4s linear;
+}
+.has-ripple {
+	overflow: hidden;
+	position: relative;
+	user-select: none;
+	outline: none;
+	display: inline-block;
+}
+@keyframes ripple {
+	100% {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+	}
+}
+@-webkit-keyframes ripple {
+	100% {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+@-o-keyframes ripple {
+	100% {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+@-moz-keyframes ripple {
+	100% {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+		opacity: 0;
+	}
+}

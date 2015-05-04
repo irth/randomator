@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+randomator {
+  font-size: 32px;
+  display: inline-block;
+  font-family: Roboto, sans-serif;
+  -webkit-box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.3);
+  box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+randomator #output-wrapper {
+  text-align: right;
+  color: grey;
+  font-size: 64px;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-x: scroll;
+  width: 300px;
+}
+
+randomator .button {
+  overflow: shown;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  background: #444;
+  color: whitesmoke;
+}
+
+randomator .button:hover {
+  background: #555;
+}
+
+randomator .button.op {
+  background: #666;
+}
+
+randomator .button.op:hover {
+  background: #777;
+}
+
+randomator .button.op-count {
+  background: #222;
+  width: 320px;
+}
+
+randomator .button.op-count:hover {
+  background: #333;
+}
+
+randomator .row:first-of-type .button {
+  -webkit-box-shadow: inset 0px 20px 9px -14px rgba(0,0,0,0.5);
+  -moz-box-shadow: inset 0px 20px 9px -14px rgba(0,0,0,0.5);
+  box-shadow: inset 0px 20px 9px -14px rgba(0,0,0,0.3);
+  height: 95px;
+  padding-top: 15px;
+}
